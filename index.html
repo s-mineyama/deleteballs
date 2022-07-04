@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>ボール消し</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <link rel="stylesheet" type="text/css" href="master.css">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+ <script type="text/javascript" src="game.js"></script>
+ <script type="text/javascript" src="devicecheck.js"></script>
+</head>
+<body onLoad="mp_start()">
+	<div align="center" style="margin-top:0px;">
+		<div style="text-align:left;width:330px;">
+	<canvas id="canvas_e" style="background-color: #ffffff;" width="320" height="240"></canvas><br>
+	<table class="cell_space0" style="width:320px;">
+		<tr>
+			<td style="width:16%;font-size:15px;padding-left:10px;height:17px;vertical-align:top;">色:</td>
+			<td style="width:12%;height:17px"><img onclick="setcolor(1);" src="img/red.png" style="width:17px;height:17px;" /></td>
+			<td style="width:12%;height:17px"><img onclick="setcolor(2);" src="img/blue.png" style="width:17px;height:17px;" /></td>
+			<td style="width:12%;height:17px"><img onclick="setcolor(3);" src="img/green.png" style="width:17px;height:17px;" /></td>
+			<td style="width:12%;height:17px"><img onclick="setcolor(4);" src="img/yellow.png" style="width:17px;height:17px;" /></td>
+			<td style="width:12%;height:17px"><img onclick="setcolor(5);" src="img/purple.png" style="width:17px;height:17px;" /></td>
+			<td style="width:12%;height:17px"><img onclick="setcolor(0);" src="img/white.png" style="width:17px;height:17px;" /></td>
+			<td style="width:12%;height:17px"><img onclick="setcolor2();" src="img/black.png" style="width:17px;height:17px;" /></td>
+		</tr>
+	</table>
+	<table class="cell_space0" style="width:320px;">
+		<tr>
+			<td style="width:22%"><button id="start" class="std" onclick="gp_start()" style="font-size:11px;">消去開始</button></td>
+			<td style="width:25%"><button id="save" class="std" onclick="map_save()" style="font-size:11px;">一時セーブ</button></td>
+			<td style="width:25%"><button id="load" class="std" onclick="map_load()" style="font-size:11px;">一時ロード</button></td>
+			<td style="width:28%"><button id="download" class="std" onclick="download()" style="font-size:11px;">ダウンロード</button></td>
+		</tr>
+	</table>
+	<table class="cell_space0" style="width:320px;">
+		<tr>
+			<td style="width:25%;font-size:12px;">アップロード</td>
+			<td style="width:75%"><input type="file" id="file" style="width:100%;font-size:12px;margin:0px 0px 10px 0px;" /></td>
+		</tr>
+	</table>
+ <script type="text/javascript" src="bottom.js"></script>
+    </div>
+  </div>
+</body>
+</html>
